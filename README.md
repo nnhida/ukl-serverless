@@ -40,7 +40,7 @@ This repository contains the source code for UKL XI TKJ 2 SMK Telkom Malang. The
 
 ### 3. Feedback list is loaded from `/items`
 - Lambda retrieves all feedback entries
-- Signed URLs are generated for S3 images (valid for 1 hour)
+- Signed URLs are generated for S3 images (valid for 1 week)
 
 ---
 

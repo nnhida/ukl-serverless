@@ -1,6 +1,6 @@
 # 📝 Feedback Form with Image Upload (AWS Serverless)
 
-This repository contains the source code for a school project created by students of **XI TKJ 2 SMK Telkom Malang** as part of their UKL (Uji Kompetensi Level) assessment. The project demonstrates how to build a simple full-stack serverless application using AWS.
+This repository contains the source code for UKL XI TKJ 2 SMK Telkom Malang. The project demonstrates how to build a simple full-stack serverless application using AWS.
 
 ## ✨ Features
 

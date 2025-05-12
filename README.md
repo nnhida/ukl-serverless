@@ -79,14 +79,6 @@ This project assumes:
 
 ---
 
-## 💡 To Do (Optional)
-
-- [ ] Add image file type validation
-- [ ] Add pagination to feedback list
-- [ ] Add authentication for feedback submission
-
----
-
 ## License
 
 MIT

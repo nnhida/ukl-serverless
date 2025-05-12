@@ -1,4 +1,4 @@
-const API_GATEWAY_URL = 'https://p6ofbx7qr1.execute-api.us-east-1.amazonaws.com/prod'; // change this with your actual API Gateway URL
+const API_GATEWAY_URL = 'YOUR_API_URL'; // change this with your actual API Gateway URL
 
 async function submitFeedback() {
   const name = document.getElementById('username').value.trim();

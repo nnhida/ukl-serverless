@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Feedback Form</title>
+    <style>
+      :root {
+        --primary-color: #6e81bb;
+        --background-color: #f3f4f6;
+        --card-color: #ffffff;
+        --text-color: #111111;
+        --border-color: #d1d5db;
+        --dark-gray: #1f2937;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        padding: 40px 20px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h2 {
+        color: var(--dark-gray);
+        margin-bottom: 20px;
+      }
+
+      form {
+        background-color: var(--card-color);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 40px;
+      }
+
+      input,
+      textarea {
+        display: block;
+        width: 100%;
+        padding: 12px 16px;
+        margin-bottom: 20px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        font-size: 16px;
+        background-color: #fff;
+        transition: border 0.2s ease-in-out;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: var(--primary-color);
+        outline: none;
+      }
+
+      button {
+        padding: 12px 20px;
+        font-size: 16px;
+        background-color: var(--primary-color);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.2s ease-in-out;
+      }
+
+      button:hover {
+        background-color: #1512be;
+      }
+
+      #response {
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--primary-color);
+      }
+
+      #feedback-container {
+        width: 100%;
+        max-width: 800px;
+        background: var(--card-color);
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        padding: 12px 16px;
+        text-align: left;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      th {
+        background-color: var(--background-color);
+        color: var(--dark-gray);
+        font-weight: 600;
+      }
+
+      tr:hover {
+        background-color: #fee2e2; /* very light red */
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+      @media (max-width: 600px) {
+        form,
+        #feedback-container {
+          padding: 20px;
+        }
+
+        table {
+          font-size: 14px;
+        }
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Feedback Form</h2>
+    <form onsubmit="event.preventDefault(); submitFeedback();">
+      <input
+        type="text"
+        id="username"
+        placeholder="Nama"
+        required
+      />
+      <textarea
+        id="feedback"
+        placeholder="Feedback"
+        required
+      ></textarea>
+      <input
+        type="file"
+        id="file"
+        accept="image/*"
+        required
+      />
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="response"></div>
+
+    <h2>List Feedback</h2>
+    <div id="feedback-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

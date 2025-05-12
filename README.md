@@ -54,12 +54,6 @@ This repository contains the source code for UKL XI TKJ 2 SMK Telkom Malang. The
 
 ---
 
-## 🖼️ Screenshot
-
-> Optional: Add a screenshot of the UI here!
-
----
-
 ## 🔐 Security Notes
 
 - All S3 image URLs are **signed** URLs (not public), generated server-side.

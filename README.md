@@ -61,11 +61,6 @@ This repository contains the source code for UKL XI TKJ 2 SMK Telkom Malang. The
 
 ---
 
-## 📁 File Structure
-
-
----
-
 ## 📌 Environment Variables (for Lambda)
 
 Make sure to set the following environment variables in your Lambda function:
@@ -89,12 +84,6 @@ This project assumes:
 - [ ] Add image file type validation
 - [ ] Add pagination to feedback list
 - [ ] Add authentication for feedback submission
-
----
-
-## 📬 Feedback
-
-Got feedback about this feedback project? Submit it through the form! 😉
 
 ---
 
